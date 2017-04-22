@@ -205,7 +205,7 @@ __The version control system that we'll use is [git](https://git-scm.com/)__  &r
 It was developed by this super _friendly_ person, __Linus Torvalds... who?__ &rarr;
 
 <div markdown="block" class="img-container">
-![Linux](http://cdn.arstechnica.net/wp-content/uploads/2013/02/linus-eff-you-640x363.png)
+![Linux](https://cdn.arstechnica.net/wp-content/uploads/2013/02/linus-eff-you-640x363.png)
 </div>
 {:.fragment}
 
