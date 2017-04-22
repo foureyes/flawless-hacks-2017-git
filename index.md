@@ -164,7 +164,7 @@ And some things that __aren't supported by online sync tools__, like DropBox or 
 </section>
 
 <section markdown="block">
-## Let's Ask our Computer Deal With Managing our Source Code 🙃
+## Let's Ask our Computer to Deal With Managing our Source Code 🙃
 
 #### (by using software made for managing your source code)
 </section>
