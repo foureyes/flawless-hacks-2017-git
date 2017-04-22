@@ -225,6 +225,9 @@ __GIT and GITHUB ARE DIFFERENT!__
 2. {:.fragment} __GitHub is a website__ 
     * ...that hosts git repositories
     * and has some other features for managing projects
+3. {:.fragment} Alternatives to GitHub include:
+    * [bitbucket](https://bitbucket.org/)
+    * [gitlab](https://about.gitlab.com/)
 
 <small>So... you can use git without github.</small>
 {:.fragment}
@@ -236,13 +239,13 @@ __GIT and GITHUB ARE DIFFERENT!__
 
 [See the diagram on pro git](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
 
-* equivalent to what we may have done manually:
-  * save files in folder with locally as a _snapshot_ of current state of code
-  * recover by going through folders on computer
-  * see versions by the timestamped folder name
-* all of this is automated through software
-  * stores changes to your files in a local database
-  * an example of local version control is RCS
+* __equivalent to what we may have done manually__ (it's kind of like):
+  * {:.fragment} save files in folder with locally as a _snapshot_ of current state of code
+  * {:.fragment} recover by going through folders on computer
+  * {:.fragment} see versions by the timestamped folder name
+* {:.fragment} but __all of this is automated through software__ ‼️
+  * {:.fragment} stores changes to your files in a local database / file system
+  * {:.fragment} an example of local version control is RCS
 
 </section>
 
@@ -251,9 +254,9 @@ __GIT and GITHUB ARE DIFFERENT!__
 
 [See the diagram on pro git](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
 
-* promoted collaboration; everyone got code from the same place
+* __promoted collaboration__; everyone retrieves and sends code to the same place
 * single server that has all of the versioned files
-* everyone working on it had a _working copy_, but not the full repository
+* __everyone working on it had a _working copy_, but not the full repository__
 * an example is subversion (SVN)
 
 </section>
@@ -263,11 +266,11 @@ __GIT and GITHUB ARE DIFFERENT!__
 
 [See the diagram on pro git](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
 
-* everyone has full repository
+* __everyone has full repository__ 🙌
 * can connect to multiple __remote__ repositories 
 * can push and pull to individuals, not just _shared_ or _centralized_ servers
 * single server that has all of the versioned files
-* everyone working on it had a _working copy_
+* __everyone working on it has a _working copy_ and the full repository history (yes, that's a lot!)__
 
 </section>
 
@@ -296,20 +299,23 @@ __repository__ - the place where your version control system stores the snapshot
 
 * think of it as the place where you store all previous/saved versions of your files
 * this could be:
-  * __local__ - on your computer
-  * __remote__ - a copy of versions of your files on another computer
+  * {:.fragment} __local__ - on your computer
+  * {:.fragment} __remote__ - a copy of versions of your files on another computer
 </section>
 
 <section markdown="block">
 ## Some More Terminology
 
 * __git__ - the distributed version control system that we're using
-* __github__ - a website that can serve as a remote _repository_ for your project
+* __github__ - a website that:
+    * can __serve as a remote _repository_ for your project__
+    * has some project management / project community related features
 
-__What's a remote repository again?__ &rarr;
+
+What's a __remote repository__ again? &rarr;
 
 <div class="fragment" markdown="block">
-A copy of versions of your files on another computer/server
+__A copy of versions of your files on another computer/server__
 </div>
 </section>
 
@@ -318,28 +324,33 @@ A copy of versions of your files on another computer/server
 
 In your __local repository__, git _stores_ your files and versions of your files in a few different _conceptual_ places:
 
-* __the working directory / working copy__ - stores the version of the files that you're currently modifying / working on
-* __index__ - the staging area where you put stuff that you want to _save_ (or... that you're about to _commit_)
-* __HEAD__ - the most recent saved version of your files (or... the last _commit_ that you made)
+* {:.fragment} __the working directory / working copy__ - stores the version of the files that you're currently modifying / working on
+    * that is, the actual files that you're working with
+* {:.fragment} __index__ - the staging area where you put stuff that you want to _save_ (or... that you're about to _commit_)
+* {:.fragment} __committed changes__ and __HEAD__ - the most recent saved version of your files (or... the last _commit_ that you made), and all versions of your files
 </section>
 
 <section markdown="block">
 ## Another Way to Look at It
 
-* __the working directory / working copy__ - stuff you've changed but haven't saved
-* __index__ - stuff that you're about to save
-* __HEAD__ - stuff that you've saved
+__Whew, that was a lot 😓.__ Maybe an easier way of looking at is:
+
+* {:.fragment} __the working directory / working copy__ - stuff you've changed but haven't saved
+* {:.fragment} __index__ - stuff that you're about to save
+* {:.fragment} __committed work__ and __HEAD__ - stuff that you've saved
 </section>
 
 <section markdown="block">
 ## Aaaaand.  More Terminology.
 
-* __commit__ - save a snapshot of your work
-* __diff__ - the line-by-line difference between two files or sets of files
+* to __commit__ your code is: to save a snapshot of your work
+* a __diff__ is: - the line-by-line difference between two files or sets of files
 </section>
 
 <section markdown="block">
 ## Two Basic Workflows
+
+__We'll discuss two ways of working with git today__ &rarr;
 
 1. Creating and setting up local and remote repositories
 2. Making, saving, and _sharing_ changes
@@ -348,37 +359,26 @@ In your __local repository__, git _stores_ your files and versions of your files
 <section markdown="block">
 ## Creating Repositories
 
-* create a local repository
-* configure it to use your name and email (for tracking purposes)
-* create a remote repository
-* _link_ the two
+1. create a local repository
+2. configure it to use your name and email (for tracking purposes)
+3. create a remote repository
+4. _link_ the two
 </section>
 
 <section markdown="block">
 ## Making, Saving, and Sharing Changes
 
-* make changes
-* put them aside so they can staged for saving / committing
-* save / commit
-* send changes from local repository to remote repository
-</section>
-
-<section markdown="block">
-## Ok.  Great!
-
-__Remind me again, what's github?__ &rarr;
-
-* __github is a website__ 
-* it can serve as a __remote git repository__
-  * that means it can store all versions of your files
-  * (after you've sent changes to it)
+1. make changes
+2. put them aside so they can staged for saving / committing
+3. save / commit
+4. send changes from local repository to remote repository
 </section>
 
 
 
 <section markdown="block">
 
-# Creating and Setting Up Repositories 
+## Creating and Setting Up Repositories 
 
 </section>
 
@@ -453,6 +453,7 @@ __git remote add__ - add a remote repository so that you can synchronize changes
 <section markdown="block">
 ## Typical Workflow for Making Changes
 
+0. git pull (or git pull --rebase depending on what your team does)
 1. make changes
 2. git status (to see what changes there are)
 3. git add --all (to stage your changes for committing)
@@ -461,6 +462,18 @@ __git remote add__ - add a remote repository so that you can synchronize changes
 6. git push origin master (optionally send/share your changes to a remote repository)
 
 Check out a workflow chart here: [http://rogerdudler.github.io/git-guide/img/trees.png](http://rogerdudler.github.io/git-guide/img/trees.png)
+</section>
+
+<section markdown="block">
+## git pull
+
+__git pull__ - get the latest version of code from the remote repository (in case anyone has made any changes!)
+
+<pre><code data-trim contenteditable>git pull
+
+# or if you're using a rebase based workflow
+git pull --rebase
+</code></pre>
 </section>
 
 <section markdown="block">
@@ -479,11 +492,11 @@ __git add__ - mark a change to be staged
 
 <pre><code data-trim contenteditable># in the directory of your repository
 
-# add all
-git add --all 
-
 # add specific file
 git add myfile.txt
+
+# add all
+git add --all 
 </code></pre>
 </section>
 
@@ -554,6 +567,105 @@ __git push__ - send your code to a remote repository
 git push origin master
 </code></pre>
 </section>
+
+<section markdown="block">
+## Can't Push!?
+
+If you try to push, but git says __you have to pull first__, that means that there were changes in the remote repository &rarr;
+
+* try running `git pull`
+* this will bring your local repository up-to-date
+
+
+</section>
+
+<section markdown="block">
+## Problems with Pull
+
+If you try to pull, but git says __you have changes in your working copy__, that means that your have changes that you haven't committed yet.
+
+* commit your changes using `git add` and `git commit`
+
+If you try to pull, but __you get a merge conflict__ &rarr;
+
+* you'll have to look at the files that have conflicts - get a list with `git status`
+* manually fix the conflicts
+* `git add` and `git commit` to resolve conflicts
+
+</section>
+
+<section markdown="block">
+## Ok, Now Your Turn
+</section>
+
+<section markdown="block">
+## First, Some Commandline Exercises
+
+__You should probably know these commands__ &rarr;
+
+1. __pwd__ - shows you the current directory that you're in
+2. __cd__ - change to another directory
+3. __cat__ - show the contents of a file
+
+These commands can be entered in __Terminal__ (apple spacebar, Terminal).
+
+Commandline commands can be thought of as verbs/actions. You can specify the object or target of the verb by adding a space and target afterwards: `cd directory_to_change_to`
+</section>
+
+<section markdown="block">
+## Some Specific Examples
+
+<pre><code data-trim contenteditable># change to your Desktop
+cd /Users/jversoza/Desktop
+
+# go up one directory
+cd ../
+
+# go back to Desktop
+cd Desktop
+
+# show the directory that we're in
+pwd
+
+# show the contents of the file pizza.txt 
+# on the Desktop
+cat pizza.txt
+</code></pre>
+
+
+
+
+</section>
+
+<section markdown="block">
+## Notes About Commandline Commands
+
+`cd /Users/jversoza/Desktop`
+
+* if a directory is prefixed with /, then that will be relative to your root directory
+* will go to Desktop __regardless of what directory you're int__
+
+`cd Desktop`
+
+* if there's no slash, then it's __relative to the directory you're in__ (the one shown by `pwd`)
+* so, will go to Desktop only if you're already in /Users/jversoza
+
+</section>
+
+
+<section markdown="block">
+## Some Stuff to Try
+
+* work in pairs
+* create a repository
+* one person will make changes to repository and push
+* another person will pull
+* try the same, but with a conflict!
+
+</section>
+
+
+
 
 
 
