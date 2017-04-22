@@ -657,7 +657,9 @@ cat pizza.txt
 ## Some Stuff to Try
 
 * work in pairs
-* create a repository
+* create a remote repository
+* add both members of pair as collaborators
+* both members will clone the repository
 * one person will make changes to repository and push
 * another person will pull
 * try the same, but with a conflict!
